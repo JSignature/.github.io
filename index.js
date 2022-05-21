@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', e => {
     selectedColor.style.backgroundColor = color
     const colorLessHash = color.slice(1)
     //Fetch the color from API based on the picker
-    fetch(`http://www.thecolorapi.com/id?hex=${colorLessHash}`)
+    fetch(`https://www.thecolorapi.com/id?hex=${colorLessHash}`)
       .then(resp => resp.json())
       .then(obj => {
         //Grab the HTML elements to add the color values by ID
